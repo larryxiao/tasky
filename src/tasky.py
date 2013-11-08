@@ -232,7 +232,7 @@ def print_all_tasks(tasklistID):
         # Print notes if specified
         if 'notes' in task:
             print tab * (depth + 1), 'Notes: {0}'\
-                .format(task['notes'])
+                .format(task['notes'].encode('utf-8'))
 
 def print_summary():
     for tasklistID in TaskLists:
